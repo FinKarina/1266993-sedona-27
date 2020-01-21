@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Karina Nikonova](https://up.htmlacademy.ru/htmlcss/27/user/1266993).
-* Наставник: `Владислав Кривокора`.
+* Наставник: `Владислав Кривокора`(https://htmlacademy.ru/profile/krivokora).
 
 ---
 
