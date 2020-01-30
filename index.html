@@ -25,7 +25,7 @@
   </header>
 
   <main>
-    <h1>Sedona</h1>
+    <h1 class="visually-hidden">Седона</h1>
     <section>
       <h2>
         Седона — небольшой городок в Аризоне,<br>
@@ -44,15 +44,34 @@
         и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
     </section>
-    <section class="map">
-      <img src="img/map.png" width="1200" height="593" alt="map">
-    </section>
 
     <section>
-      <h2>
-        ПОИСК ГОСТИНИЦЫ В седоне
-      </h2>
-      <!--Здесь будет форма-->
+      <button type="button">
+        <h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+      </button>
+      <form action="#" method="GET">
+        <p>
+          <label for="arrival-date">Дата заезда:</label>
+          <input type="date" name="date" id="arrival-date" placeholder="24 апреля 2017" value="">
+        </p>
+        <p>
+          <label for="date-of-departure">Дата выезда:</label>
+          <input type="date" name="date" id="date-of-departure" placeholder="4 июля 2017" value="">
+        </p>
+        <p>
+          <label for="adults">Взрослые:</label>
+          <input type="number" min="1" max="50" name="amount" id="adults" placeholder="2">
+        </p>
+        <p>
+          <label for="children">Дети:</label>
+          <input type="number" min="0" name="amount" id="children" placeholder="0">
+        </p>
+        <button type="submit">Найти</button>
+      </form>
+    </section>
+
+    <section class="map">
+      <img src="img/map.png" width="1200" height="593" alt="Седона">
     </section>
   </main>
 
@@ -68,7 +87,9 @@
     </ul>
     <section>
       Website by
-      <img src="img/logo-htmla.png" alt="logotip htmla" width="115" height="41">
+      <a href="#">
+        <img src="img/logo-htmla.png" alt="logotip htmla" width="115" height="41">
+      </a>
     </section>
   </footer>
 
