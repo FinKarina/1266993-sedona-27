@@ -4,85 +4,133 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a>
-        <img src="img/logo.svg" class="logo" width="140" height="71" alt="Logotip">
-      </a>
-      <ul>
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
+  <div class="content">
+    <header>
+      <nav class="main-navigation">
+        <a>
+          <img src="img/logo.svg" class="logo" width="140" height="71" alt="Logotip">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+      <div class="header-welcome"></div>
+    </header>
     <section>
-      <ul>
-        <li>
-          <a href="#">
-            <h2>Amara Resort & Spa</h2>
-          </a>
-          <img src="img/hotel-picture-first.jpg" alt="hotel-picture-first" width="135" height="90">
-          <p>Гостиница</p>
-          <p>От 4000 Р.</p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a> 
-          <p>Рейтинг: 8,5</p>
-        </li>
+      <h1>Поиск гостиницы</h1>
+      <form class="filter" method="GET" action="#">
+        <div class="infrastructure">
+          <b>Инфраструктура:</b>
+          <ul>
+            <li>
+              <input type="checkbox" name="pool" id="pool" checked>
+              <label for="pool">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="parking">
+              <label for="parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="wi-fi" id="wi-fi">
+              <label for="wi-fi">Wi-Fi</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="type-of-housing">
+          <b>Тип жилья:</b>
+          <ul>
+            <li>
+              <input type="checkbox" name="hotel" id="filter-hotel" checked>
+              <label for="hotel">Гостиница</label>
+            </li>
+            <li>
+              <input type="checkbox" name="motel" id="filter-motel" checked>
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartmens" id="filter-apartmens" checked>
+              <label for="filter-apartmens">Апартаменты</label>
+            </li>
+          </ul>
+        </div>
 
 
-        <li>
-          <a href="#">
-            <h2>Desert Quail Inn</h2>
-          </a>
-          <img src="img/hotel-picture-second.jpg" alt="hotel-picture-second" width="135" height="90">
-          <p>Мотель</p>
-          <p>От 3000 Р.</p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
-          <p>Рейтинг: 8,9</p>
-        </li>
-
-        <li>
-          <a href="#">
-            <h2>Villas at Poco Diablo</h2>
-          </a>
-          <img src="img/hotel-picture-third.jpg" alt="hotel-picture-third" width="135" height="90">
-          <p>Апартаменты</p>
-          <p>От 2000 Р.</p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
-          <p>Рейтинг: 9,2</p>
-        </li>
-      </ul>
+      </form>
     </section>
 
-  </main>
+    <main>
 
-  <footer>
-    <p>
-      #visitSEDONA<br>
-      <a href="tel">Тел: +7(495) 666-02-66</a>
-    </p>
-    <ul class="footer">
-      <li><a href="#">tw-icon</a></li>
-      <li><a href="#">fb-icon</a></li>
-      <li><a href="#">youtube-icon</a></li>
-    </ul>
-    <div class="footer">
-      Website by
-      <a href="#">
-        <img src="img/logo-htmla.png" alt="logotip htmla" width="115" height="41">
-      </a>
-    </div>
-  </footer>
+      <section>
+        <ul class="apartmens">
+          <li>
+            <a href="#" class="button-apartmens">
+              <h2>Amara Resort & Spa</h2>
+            </a>
+            <img src="img/hotel-picture-first.jpg" class="hotel-picture" alt="hotel-picture-first" width="135" height="90">
+            <p class="housing">Гостиница</p>
+            <p class="price">От 4000 Р.</p>
+            <a href="#" class="button-more-details">Подробнее</a>
+            <a href="#" class="button-book-now">Забронировать</a>
+            <p class="rating">Рейтинг: 8,5</p>
+          </li>
+
+
+          <li>
+            <a href="#" class="button-apartmens">
+              <h2>Desert Quail Inn</h2>
+            </a>
+            <img src="img/hotel-picture-second.jpg" class="hotel-picture" alt="hotel-picture-second" width="135" height="90">
+            <p class="housing">Мотель</p>
+            <p class="price">От 3000 Р.</p>
+            <a href="#" class="button-more-details">Подробнее</a>
+            <a href="#" class="button-book-now">Забронировать</a>
+            <p class="rating">Рейтинг: 8,9</p>
+          </li>
+
+          <li>
+            <a href="#" class="button-apartmens">
+              <h2>Villas at Poco Diablo</h2>
+            </a>
+            <img src="img/hotel-picture-third.jpg" class="hotel-picture" alt="hotel-picture-third" width="135" height="90">
+            <p class="housing">Апартаменты</p>
+            <p class="price">От 2000 Р.</p>
+            <a href="#" class="button-more-details">Подробнее</a>
+            <a href="#" class="button-book-now">Забронировать</a>
+            <p class="rating">Рейтинг: 9,2</p>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <p class="contacts">
+        #visitSEDONA
+      </p>
+      <ul class="footer-social">
+        <li><a href="#" class="tw-icon"><span class="visually-hidden">twitter</span></a></li>
+        <li><a href="#" class="fb-icon"><span class="visually-hidden"></span>facebook</a></li>
+        <li><a href="#" class="youtube-icon"><span class="visually-hidden"></span>youtube</a></li>
+      </ul>
+      <div class="footer">
+        Website by
+        <a href="#" class="logo-html">
+          <img src="img/logo-htmla.png" alt="logotip htmla" width="115" height="41">
+        </a>
+      </div>
+    </footer>
+  </div>
 </body>
+
 
 </html>
