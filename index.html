@@ -10,12 +10,11 @@
 </head>
 
 <body>
-  <div class="content">
-
+  <div class="wrapper">
     <header>
       <nav class="main-navigation">
-        <a>
-          <img src="img/logo.svg" class="logo" width="140" height="71" alt="Logo">
+        <a class="header-logo">
+          <img src="img/logo.svg" width="140" height="71" alt="Логотип">
         </a>
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
@@ -29,71 +28,72 @@
       </div>
     </header>
 
-    <main class="container">
+    <main class="content">
       <h1 class="visually-hidden">Седона</h1>
       <section class="advantages">
         <h2 class="title">
           Седона — небольшой городок в Аризоне,<br>
           заслуживающий большего!
-
         </h2>
-        <p class="causes">
+        <p class="advantages-list">
           Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </p>
       </section>
-      <section class="form">
-        <h2 class="form-title">Заинтересовались?</h2>
-        <p class="search">
+      <section class="offers">
+        <h2 class="offers-title">Заинтересовались?</h2>
+        <p class="offers-info">
           Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
         <h2 class="visually-hidden">Форма с поиском гостиницы в седоне</h2>
-        <button type="button" class="button-search">поиск гостиницы в седоне</button>
-        <form action="#" method="GET" class="form-section">
-          <p>
-            <label for="arrival-date">Дата заезда:</label>
-            <input type="date" class="form-arrival-date" name="date" id="arrival-date" placeholder="24 апреля 2017"
-              value="">
-          </p>
-          <p>
-            <label for="date-of-departure">Дата выезда:</label>
-            <input type="date" class="form-date" name="date" id="date-of-departure" placeholder="4 июля 2017" value="">
-          </p>
-          <p>
-            <label for="adults">Взрослые:</label>
-            <input type="number" class="form-adults" min="1" max="50" name="amount" id="adults" placeholder="2">
-          </p>
-          <p>
-            <label for="children">Дети:</label>
-            <input type="number" class="form-children" min="0" name="amount" id="children" placeholder="0">
-          </p>
-          <button type="submit" class="button-submit">Найти</button>
-        </form>
+        <div class="form-conteiner">
+          <button type="button" class="button-search">поиск гостиницы в седоне</button>
+          <form action="#" method="GET" class="form">
+            <p>
+              <label for="arrival-date">Дата заезда:</label>
+              <input class="form-arrival-date" id="arrival-date" type="date" name="date" value="24 апреля 2017">
+            </p>
+            <p>
+              <label for="date-of-departure">Дата выезда:</label>
+              <input class="form-date" id="date-of-departure" type="date" name="date" value="4 июля 2017">
+            </p>
+            <p>
+              <label for="adults">Взрослые:</label>
+              <input class="form-adults" id="adults" type="number" name="amount" min="1" max="50" placeholder="2">
+            </p>
+            <p>
+              <label for="children">Дети:</label>
+              <input class="form-children" id="children" name="amount" type="number" min="0" placeholder="0">
+            </p>
+            <button class="button-submit" type="submit">Найти</button>
+          </form>
+        </div>
       </section>
 
-      <section class="map">
-        <img src="img/map.jpg" width="1200" height="593" alt="Седона">
-      </section>
+      <div class="map">
+        <img src="img/map.jpg" width="1280" height="593" alt="Седона">
+      </div>
     </main>
 
     <footer>
-      <p class="contacts">
-        #visitSEDONA<br>
-        <a href="tel:+74956660266" class="tel">Тел: +7(495) 666-02-66</a>
-      </p>
-      <ul class="footer-social">
-        <li><a href="#" class="tw-icon"><span class="visually-hidden">twitter</span></a></li>
-        <li><a href="#" class="fb-icon"><span class="visually-hidden">facebook</span></a></li>
-        <li><a href="#" class="youtube-icon"><span class="visually-hidden">youtube</span></a></li>
-      </ul>
-      <div class="footer">
-        Website by
-        <a href="#" class="logo-html">
-          <img src="img/logo-htmla.png" alt="logo-htmla" width="115" height="41">
-        </a>
+      <div class="footer-conteiner">
+        <p class="footer-contacts">
+          #visitSEDONA<br>
+          <a class="tel" href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
+        </p>
+        <ul class="footer-social">
+          <li><a class="tw-icon" href="#"><span class="visually-hidden">twitter</span></a></li>
+          <li><a class="fb-icon" href="#"><span class="visually-hidden">facebook</span></a></li>
+          <li><a class="youtube-icon" href="#"><span class="visually-hidden">youtube</span></a></li>
+        </ul>
+        <div class="footer">
+          Website by
+          <a class="logo-html" href="#">
+            <img src="img/logo-htmla.png" alt="logo-htmla" width="115" height="41">
+          </a>
+        </div>
       </div>
     </footer>
-
   </div>
 </body>
 
