@@ -130,7 +130,19 @@ a {
 
 .form {
   text-transform: uppercase;
-  font-family: PTSans;
+  font-family: "PTSans"Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: left;
+  color: #000000;
+}
+
+.form-adults label {
+  width: 71px;
+  height: 11px;
+  text-transform: uppercase;
+  font-family: "PTSans"Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
@@ -213,15 +225,7 @@ p.footer-contacts {
 
 .footer-social {
   list-style: none;
-
 }
-
-
-
-
-
-
-
 
 
 .footer {
@@ -248,7 +252,7 @@ ul {
   padding-left: 0;
 }
 
-.title-apartmens {}
+
 
 .title-apartmens h3 {
   font-family: "PTSans";
@@ -391,8 +395,9 @@ ul {
   position: relative;
   z-index: 100;
 
+  display: flex;
+  flex-direction: column;
   width: 568px;
-
   padding: 55px;
 
 }
@@ -418,6 +423,7 @@ ul {
   padding-bottom: 14px;
   border: 0;
   width: 346px;
+  height: 38px;
   background-color: #f2f2f2;
 }
 
@@ -438,19 +444,21 @@ ul {
 
 
 
-.form-adults,
-.form-children {
-  display: inline-flex;
-  width: 196px;
-  text-align: center;
-  vertical-align: middle;
 
-  ;
+
+
+.adults-children {
+  display: flex;
+  width: 100%;
+  min-height: 38px;
+  justify-content: space-between;
 }
 
-
 .form-adults {
-  margin-right: 53px;
+  display: flex;
+  margin: 0;
+  align-items: baseline;
+  text-align: center;
 }
 
 
@@ -459,19 +467,27 @@ ul {
 .form-children button,
 .form-children input {
   border: 0;
+  padding: 0;
   background-color: #f2f2f2;
   width: 38px;
   height: 38px;
+  text-align: center;
 
 
 }
 
 .form-adults label {
   margin-right: 41px;
+  width: 71px;
+  height: 11px;
+  text-align: center;
+
 }
 
 .form-children {
-  margin-bottom: 20px;
+  display: flex;
+  margin: 0;
+  align-items: baseline;
 }
 
 
@@ -483,6 +499,7 @@ ul {
 
 .button-submit {
   margin-top: 54px;
+  padding: 0;
 }
 
 
@@ -578,7 +595,7 @@ footer {
 
 }
 
-.apartmens-list {}
+
 
 .apartmens-item {
   display: flex;
@@ -687,6 +704,12 @@ flex-wrap: wrap;
 width: 108px;
 justify-content: space-between;
 margin-left: auto;*/
+.container-button {
+  display: inline-flex;
+  width: 963px;
+}
 
-
+.block.rating {
+  margin-top: 0;
+  margin-left: auto;
 }
