@@ -12,7 +12,7 @@ body {
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   color: black;
   background-color: #f2f2f2;
   width: 1200px;
@@ -40,7 +40,7 @@ a {
 
 .main-navigation {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
 
@@ -73,9 +73,9 @@ a {
 
 .header-welcome {
   padding-top: 132px;
-  height: 550px;
+  height: 557px;
   background-image: url("../img/background-photo.jpg");
-  background-position: 0px 0px;
+  background-position: 0px -34px;
 
   background-repeat: no-repeat;
   background-size: 1200px 800px;
@@ -86,26 +86,132 @@ a {
 
 
 
+
+
 .advantages {
   text-align: center;
   background-color: #ffffff;
 }
 
 .title {
+  margin-top: 61px;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
 }
 
 .advantages-list {
+  margin-top: 38px;
+  margin-bottom: 56px;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 26px;
+  text-align: center;
   color: #333333;
   text-transform: uppercase;
 }
+
+.advantages ul {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.advantages-item h3 {
+
+
+  margin: 0;
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+
+}
+
+.advantages-item p {
+  margin: 0;
+
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+  text-transform: lowercase;
+
+}
+
+.advantages-container h3,
+.advantages-container p {
+  color: #ffffff;
+}
+
+.advantages-item {
+  display: flex;
+  min-height: 256px;
+}
+
+.advantages-wrap {
+  width: 400px;
+  min-height: 330px;
+  padding-top: 60px;
+  padding-bottom: 85px;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center
+}
+
+
+
+.advantages-wrap svg {
+
+  order: -2
+}
+
+
+
+
+
+
+.advantages-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  width: 400px;
+  height: 256px;
+  padding: 46px 60px 64px 60px;
+  background-color: #81b3d2;
+}
+
+.causes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 256px;
+  width: 400px;
+  padding: 50px 77px 64px 77px;
+
+
+  background-color: #eeeeee;
+}
+
+
+
+
 
 .offers {
   text-align: center;
@@ -114,7 +220,7 @@ a {
 
 .offers-title {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
@@ -122,7 +228,7 @@ a {
 
 .offers-info {
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 24px;
   color: #333333;
   text-transform: uppercase;
@@ -130,9 +236,9 @@ a {
 
 .form {
   text-transform: uppercase;
-  font-family: "PTSans"Arial, sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
   text-align: left;
   color: #000000;
@@ -142,7 +248,7 @@ a {
   width: 71px;
   height: 11px;
   text-transform: uppercase;
-  font-family: "PTSans"Arial, sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
@@ -152,7 +258,7 @@ a {
 
 .button-search,
 .button-submit {
-  font-family: PTSans;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
@@ -205,11 +311,13 @@ a {
 
 
 p.footer-contacts {
-  font-family: PTSans;
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
-  text-align: center;
+  text-align: left;
   color: #000000;
   text-transform: uppercase;
 }
@@ -220,6 +328,10 @@ p.footer-contacts {
   text-decoration: none;
   text-align: center;
   color: #000000;
+  line-height: 26px;
+  font-weight: 700;
+  font-size: 21px;
+  text-transform: uppercase;
 }
 
 
@@ -231,7 +343,7 @@ p.footer-contacts {
 .footer {
   width: 74px;
   height: 11px;
-  font-family: PTSans;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
@@ -255,7 +367,7 @@ ul {
 
 
 .title-apartmens h3 {
-  font-family: "PTSans";
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -266,8 +378,8 @@ ul {
 
 .housing,
 .price {
-  font-family: PTSans;
-  font-weight: normal;
+  font-family: "PTSans", Arial, sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-align: left;
@@ -277,9 +389,9 @@ ul {
 
 .button-details,
 .button-reserve {
-  font-family: PTSans;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 21px;
   text-align: left;
   color: #ffffff;
@@ -299,9 +411,9 @@ ul {
 }
 
 .rating {
-  font-family: PTSans;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 21px;
   text-align: center;
   color: #666666;
@@ -348,6 +460,7 @@ ul {
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   color: #ffffff;
 
@@ -377,7 +490,7 @@ ul {
 }
 
 .site-navigation li:nth-child(2) {
-  margin-right: 244px;
+  margin-right: auto;
 }
 
 
@@ -507,9 +620,12 @@ ul {
 
 
 footer {
+  margin-top: -122px;
   width: 1200px;
   height: 120px;
   padding-top: 36px;
+  opacity: 90%;
+  background-color: #f2f2f2;
 
 
 
@@ -518,18 +634,17 @@ footer {
 
 
 .footer-container {
+  margin-left: 132px;
+  margin-right: 101px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 
 
 }
 
-.footer-contacts {
-
-  height: 52px;
-
-  margin: 0;
-
+.container-contacts {
+  margin-bottom: 32px;
+  margin-right: auto;
 }
 
 
@@ -538,8 +653,8 @@ footer {
 
   justify-content: space-between;
   width: 150px;
-  height: 48px;
-
+  min-height: 48px;
+  margin: 0;
 
 }
 
@@ -547,8 +662,12 @@ footer {
   display: flex;
   margin-right: 8px;
   width: 197px;
-  border-top: 3px;
-  margin-left: 101px;
+  margin: 0;
+  margin-left: auto;
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .logo-html {
@@ -586,7 +705,7 @@ footer {
   width: 1px;
   height: 1px;
   margin: -1px;
-  …
+
 }
 
 
@@ -712,4 +831,19 @@ margin-left: auto;*/
 .block.rating {
   margin-top: 0;
   margin-left: auto;
+}
+
+
+.content {
+  position: relative;
+}
+
+.content::before {
+  position: absolute;
+  top: -118px;
+  left: -2px;
+  content: " ";
+  background-image: url(../img/polygon.png);
+  width: 1203px;
+  height: 59px;
 }
