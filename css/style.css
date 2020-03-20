@@ -636,7 +636,8 @@ ul {
 
 .map img {
   position: absolute;
-  left: 0px;
+  left: 0;
+  top: 1546px;
   z-index: 1;
 }
 
