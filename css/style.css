@@ -761,6 +761,7 @@ p.footer-contacts {
 
 .social-button:active {
   background-color: #5496bd;
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .footer {
