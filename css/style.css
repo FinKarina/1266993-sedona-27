@@ -137,12 +137,12 @@ ul {
 }
 
 .site-navigation a:hover,
-.title-apartmens:hover {
+.title-apartments:hover {
   color: #81b3d2;
 }
 
 .site-navigation a:focus,
-.title-apartmens:focus {
+.title-apartments:focus {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1175,7 +1175,7 @@ p.footer-contacts {
   fill: #81b3d2;
 }
 
-.title-apartmens h3 {
+.title-apartments h3 {
   margin-top: 7px;
   margin-bottom: 9px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -1186,11 +1186,11 @@ p.footer-contacts {
   text-transform: uppercase;
 }
 
-.title-apartmens h3:hover {
+.title-apartments h3:hover {
   color: #81b3d2;
 }
 
-.title-apartmens h3:active {
+.title-apartments h3:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1229,12 +1229,12 @@ p.footer-contacts {
   background-color: #766357;
 }
 
-.apartmens {
+.apartments {
   width: 1200px;
 
 }
 
-.apartmens-item {
+.apartments-item {
   display: flex;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
@@ -1247,11 +1247,11 @@ p.footer-contacts {
   order: -1;
 }
 
-.apartmens-list li:nth-child(1) {
+.apartments-list li:nth-child(1) {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.apartmens-container {
+.apartments-container {
   position: relative;
   padding-top: 18px;
   padding-left: 30px;
@@ -1287,7 +1287,7 @@ p.footer-contacts {
   width: 181px;
 }
 
-.wrap-apartmens {
+.wrap-apartments {
   display: flex;
   flex-direction: row;
 
