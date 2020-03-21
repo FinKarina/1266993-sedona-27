@@ -101,8 +101,6 @@ ul {
   margin: 0px;
   padding: 0;
   padding-top: 15px;
-
-  text-align: center;
 }
 
 .site-navigation li:nth-child(2) {
@@ -127,11 +125,16 @@ ul {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
-  text-align: center;
   color: #000000;
 }
 
+.navigation-item-left {
+  text-align: left;
+}
 
+.navigation-item-right {
+  text-align: right;
+}
 
 .site-navigation a:hover,
 .title-apartmens:hover {
@@ -189,7 +192,10 @@ ul {
 }
 
 .title {
+  width: 1200px;
   margin-top: 61px;
+  padding-left: 365px;
+  padding-right: 365px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
@@ -251,7 +257,9 @@ ul {
 }
 
 .advantages-container h3,
-.advantages-container p {
+.advantages-item-container h3,
+.advantages-container p,
+.advantages-item-container p {
   color: #ffffff;
 }
 
@@ -269,6 +277,8 @@ ul {
   width: 400px;
   min-height: 330px;
   padding-top: 62px;
+  padding-left: 54px;
+  padding-right: 54px;
   padding-bottom: 82px;
 }
 
@@ -302,10 +312,12 @@ ul {
   background-repeat: no-repeat;
 }
 
-.advantages-container {
+.advantages-container,
+.advantages-item-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 
 
   width: 400px;
@@ -315,20 +327,36 @@ ul {
   background-color: #81b3d2;
 }
 
+.advantages-item-container h3 {
+  width: 150px;
+}
+
 .advantages-wrapper {
   padding: 47px 49px 61px 48px;
 }
 
-.causes {
+.causes,
+.causes-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 
   min-height: 256px;
   width: 400px;
   padding: 49px 61px 59px 60px;
 
   background-color: #eeeeee;
+}
+
+.causes h3,
+.causes-item h3 {
+  width: 130px;
+}
+
+.causes-item p {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .offers {
@@ -404,7 +432,7 @@ ul {
   width: 21px;
   height: 22px;
   fill: #a9a9a9;
-
+  background-color: #f2f2f2;
 
 }
 
@@ -428,6 +456,8 @@ ul {
   height: 22px;
   border: 0;
   padding: 0;
+
+  background: none;
 
   cursor: pointer;
 }
@@ -471,7 +501,7 @@ ul {
 .form-children input {
   font-weight: 700;
   color: #000000;
-  text-align: right;
+  text-align: center;
 }
 
 .form-children {
@@ -578,6 +608,7 @@ ul {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
+  font-weight: 700;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -1156,11 +1187,11 @@ p.footer-contacts {
 }
 
 .title-apartmens h3:hover {
- color: #81b3d2;
+  color: #81b3d2;
 }
 
 .title-apartmens h3:active {
-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .housing,
@@ -1198,18 +1229,6 @@ color: rgba(0, 0, 0, 0.3);
   background-color: #766357;
 }
 
-.rating {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  text-align: center;
-  color: #666666;
-  background-color: #f2f2f2;
-  width: 110px;
-  height: 27px;
-}
-
 .apartmens {
   width: 1200px;
 
@@ -1221,12 +1240,10 @@ color: rgba(0, 0, 0, 0.3);
 
   width: 1200px;
   height: 151px;
-  justify-content: center;
-
 }
 
 .hotel-picture {
-  padding: 30px 0px 0px 42px;
+  padding: 30px 0px 0px 72px;
   order: -1;
 }
 
@@ -1238,9 +1255,8 @@ color: rgba(0, 0, 0, 0.3);
   position: relative;
   padding-top: 18px;
   padding-left: 30px;
-  width: 963px;
+  width: 811px;
 }
-
 
 .block {
   display: inline-flex;
@@ -1250,7 +1266,18 @@ color: rgba(0, 0, 0, 0.3);
 }
 
 .rating {
-  margin-left: 522px;
+  width: 110px;
+  height: 27px;
+  margin: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #666666;
+
+  background-color: #f2f2f2;
 }
 
 .housing-price {
@@ -1266,6 +1293,15 @@ color: rgba(0, 0, 0, 0.3);
 
   align-items: center;
   width: 963px;
+}
+
+.rating-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-top: 29px;
+  padding-bottom: 30px;
 }
 
 .four {
@@ -1293,9 +1329,7 @@ color: rgba(0, 0, 0, 0.3);
 }
 
 .star {
-  position: absolute;
-  top: 30px;
-  right: 42px
+  margin-left: auto;
 }
 
 
@@ -1303,12 +1337,10 @@ color: rgba(0, 0, 0, 0.3);
   display: flex;
 
   width: 897px;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .block.rating {
-  margin-top: 0;
-  margin-left: auto;
   text-transform: uppercase;
 }
 
